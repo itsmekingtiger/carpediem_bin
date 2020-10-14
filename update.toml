@@ -1,0 +1,4 @@
+endpoint = "https://raw.githubusercontent.com/itsmekingtiger/carpediem_bin/master/updateinfo.json"
+exec = "carpediem"
+execpath = "/usr/local/bin"
+log-file = "update.log"
