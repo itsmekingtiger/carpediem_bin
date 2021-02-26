@@ -59,9 +59,9 @@ func main() {
 		log.Error("failed to read rand delay: ", err)
 		return
 	}
-	delay := time.Second * time.Duration(_delay[0]%60)
-	log.Infof("delay %d second", delay.Seconds)
-	time.Sleep(delay)
+	delay := time.Duration(_delay[0] % 60)
+	log.Infof("delay %d second", delay)
+	time.Sleep(delay * time.Second)
 	log.Info("delay finished")
 
 	log.Debug("다음 위치에 업데이트: ", path.Join(execPath, execName))
